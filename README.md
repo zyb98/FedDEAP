@@ -4,7 +4,9 @@
 
 **FedDEAP** is an adaptive federated prompt-tuning framework built on **CLIP** for multi-domain image recognition. It introduces a **dual-prompt design** — a *global semantic prompt* for shared representations and a *local domain prompt* for personalized adaptation, together with **Equiangular Tight Frame (ETF)** constraints to construct unbiased and discriminative semantic/domain feature spaces.
 
-[final_framework.pdf](final_framework.pdf)
+<div left="center">
+  <img src="framework.png" width="900">
+</div>
 
 ### 🛠️ Requirements
 
