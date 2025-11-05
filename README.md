@@ -32,5 +32,4 @@ python federated.py --data=pacs --round=100 --data_path=PACS_split_data --batch_
   year={2025},
   publisher={ACM}
 }
-
-
+```
