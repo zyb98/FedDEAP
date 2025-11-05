@@ -86,7 +86,7 @@ class PromptLearner_client(nn.Module):
 
         tokenized_prompts = torch.cat([clip.tokenize(p) for p in prompts])
         with torch.no_grad():
-            embedding = clip_model.token_embedding(tokenized_prompts.cuda(1)).type(dtype)
+            embedding = clip_model.token_embedding(tokenized_prompts.cuda(0)).type(dtype)
 
         # print(embedding.shape)
         self.register_buffer("token_prefix", embedding[:, :1, :])  # SOS
